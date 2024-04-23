@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locked Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="lock-screen">
+        <h2>Enter Password to Unlock Gallery</h2>
+        <input type="password" id="password" />
+        <button onclick="unlockGallery()" class="unlock">Unlock</button>
+      </div>
+      <div id="photo-gallery">
+        <h2>Photo Gallery</h2>
+        <div class="row">
+          <div class="photo" id="photo1">
+            <img
+              src="https://scontent.xx.fbcdn.net/v/t1.15752-9/417599985_1085977749211165_1084868617739517853_n.jpg?stp=dst-jpg_p320x320&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tFzKWgUtMbEQ7kNvgFTZsDx&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGg_zbgILK-Y-LLeYKxyQd2O9PDXKWLhFlniZI7lu-4sQ&oe=664EB423"
+              alt="Photo 1"
+              onclick="enlargePhoto('photo1')"
+            />
+          </div>
+          <div class="photo" id="photo2">
+            <img
+              src="https://scontent.xx.fbcdn.net/v/t1.15752-9/436787424_962262151911827_7093994524968436683_n.jpg?stp=dst-jpg_s403x403&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8XK8Wv_gYWwAb7PI8n9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QExievkcIimwxC1zeQMiixeqBQSWiTDp3Y-InhoBW5UBA&oe=664EAA03"
+              alt="Photo 2"
+              onclick="enlargePhoto('photo2')"
+            />
+          </div>
+          <div class="photo" id="photo3">
+            <img
+              src="https://scontent.xx.fbcdn.net/v/t1.15752-9/436622675_1535342743694987_758528345617800253_n.jpg?stp=dst-jpg_p320x320&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WmEO95VxrusAb4rUcyn&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHLlQOygfaEZtkkmmmAUHOkUiAIUnR7CKy9oLmvIPAhlQ&oe=664EC5FB"
+              alt="Photo 3"
+              onclick="enlargePhoto('photo3')"
+            />
+          </div>
+          <div class="photo" id="photo4">
+            <img
+              src="https://scontent.xx.fbcdn.net/v/t1.15752-9/436815981_346747165085475_2725603102179722427_n.jpg?stp=dst-jpg_s480x480&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=TttTeoARuHMAb4whl2t&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QG24Snn3rtr99wgTa5dGl0FNJHcvfgtariJIK-jhlnhdg&oe=664EBC34"
+              alt="Photo 4"
+              onclick="enlargePhoto('photo4')"
+            />
+          </div>
+          <div class="photo" id="photo5">
+            <img
+              src="https://instagram.fixc6-1.fna.fbcdn.net/v/t1.15752-9/435439951_716849537055255_7641288724809309666_n.jpg?stp=dst-jpg_p320x320&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=SFBUUbUOfKsAb7dQHNS&_nc_ht=instagram.fixc6-1.fna&oh=03_Q7cD1QHbweOBVrjPjwOwAfOwKrdXOr94242NiawDpqwKxARd_A&oe=664EDF18"
+              alt="Photo 5"
+              onclick="enlargePhoto('photo5')"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        id="enlarged-photo"
+        class="enlarged-photo"
+        onclick="hideEnlargedPhoto()"
+      ></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
